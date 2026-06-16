@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <main class="gallery-app">
+    <header class="gallery-header">
+      <h1>Image Gallery</h1>
+      <p>Browse images with filters, navigation, and lightbox view.</p>
+    </header>
+
+    <section class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </section>
+
+    <section class="gallery-grid">
+      <article class="gallery-item" data-category="nature">
+        <img src="majestic-mountain-landscape-at-sunset-free-photo.jpg" alt="Mountain landscape" />
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <img src="metropolis-skyline-and-its-aquatic-twin-shine-on-world-city-day-ai-generated-photo.jpg" alt="City skyline" />
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <img src="studio-portrait-of-handsome-young-caucasian-male.jpg" alt="Person smiling" />
+      </article>
+
+      <article class="gallery-item" data-category="nature">
+        <img src="foggy-path-through-the-forest-sunset-in-a-dark-forest-with-rays-of-light-passing-through-the-trees-photo.jpg" alt="Forest path" />
+      </article>
+
+      <article class="gallery-item" data-category="city">
+        <img src="warsaw-nightscape.jpg" alt="Night street view" />
+      </article>
+
+      <article class="gallery-item" data-category="people">
+        <img src="joyful-friends-in-casual-wear-uniting-in-urban-adventure.jpg" alt="Group of friends" />
+      </article>
+    </section>
+  </main>
+
+  <div class="lightbox hidden">
+    <button class="close-btn" aria-label="Close lightbox">&times;</button>
+    <button class="prev-btn" aria-label="Previous image">&#10094;</button>
+    <img class="lightbox-img" src="" alt="Expanded view" />
+    <button class="next-btn" aria-label="Next image">&#10095;</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
